@@ -11,4 +11,12 @@
 //console.log(array)
 
 let array=["one","two","three"];
-console.log(array.toString())
+let combined = ""
+for (var i=0; i < array.length; i++) {
+    combined += array[i]
+    if (i < array.length - 1) {
+        combined += ", "
+    }
+}
+
+console.log(combined)
